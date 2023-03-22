@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<style>
+    .main{
+        border: solid 2px black;
+        box-shadow:  5px 10px #888888;
+        border-radius: 10px;
+        display: grid;
+        width: 240px;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+    }
+    .main>div{
+        margin: 10px;
+        padding: 10px;
+    }
+    .buttons{
+        display: grid;
+        grid-template-columns: 50px 50px 50px 50px;
+        grid-template-rows: 30px 30px ; 
+    }
+    .textbox{
+        border: 2px solid black;
+        min-height: 30px;
+        text-align: center;
+    }
+
+   
+</style>
+<body>
+    <script src="index.js"></script>
+    <div class="main">
+        <div class="textbox"></div>
+        <div class="buttons">
+            <button class="data">1</button>
+            <button class="data">2</button>
+            <button class="data">3</button>
+            <button class="operator">+</button>  <!--0-->
+
+            <button class="data" >4</button>
+            <button class="data">5</button>
+            <button class="data">6</button>
+            <button class="operator">-</button> <!--1-->
+
+            <button class="data">7</button>
+            <button class="data">8</button>
+            <button class="data">9</button>
+            <button class="operator">*</button> <!--2-->
+
+            <button class="data">0</button>
+            <button class="operator">delete</button> <!--3-->
+            <button class="operator">reset</button> <!--4-->
+            <button class="operator">/</button> <!--5-->
+
+            <button class="operator" style="grid-column: 2/4;">=</button> <!--6-->
+        </div>
+       
+    </div>
+</body>
+</html>
